@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!--fontawesome-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+
+<!-- class="d-inline-block align-top" -->
+
+<body>
+
+  <!-- NAVBAR SECTION -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background: transparent !important;">
+    <a class="navbar-brand" href="#">
+      <img src="/images/logo-bookmark.svg" class="d-inline-block align-top" width="150" height="27" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#features">FEATURES <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#download">DOWNLOAD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-light" style="background-color: rgb(228, 71, 24);" id="login">LOGIN</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="portal">
+    <div class="content">
+        <div class="close">x</div>
+         <h1 style="text-align: center;">Welcome!!!</h1>
+         <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="signin" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          <button style="margin: auto; display: block;" type="submit" class="btn btn-primary" onclick="logging()">Submit</button>
+        </form>
+             <!-- <a href="#"><button value="Login" class="button" onclick="logging()">Login</button></a> -->
+    </div>
+  </div>
+
+<!-- INTRODUCTION -->
+  <div class="container intro" style="padding-left: 0px;">
+    <div class="row">
+      <div class="col-sm">
+        <h1>A Simple Bookmark Manager</h1>
+        <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+        <button type="button" class="btn btn-light btn-lg" style="background-color:hsl(249, 69%, 60%); color: white;">Get it on Chrome</button>
+        <button type="button" class="btn btn-light btn-lg" style="background-color: rgb(228, 225, 225); margin-left: 10px;">Get it on Firefox</button>
+      </div>
+      <div class="col-sm">
+        <img src="images/tab1-edit-01.png" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- TABS SECTION FEATURES-->
+    <div class="tabContainer" id="features">
+      <h1 style="font-family: 'Rubik', sans-serif; text-align: center; width: 50%; margin: auto; margin-bottom: 20px;">Features</h1>
+      <p style="font-family: 'Rubik', sans-serif; text-align: center; width: 40%; margin: auto; margin-bottom: 40px;">
+        Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
+      </p>
+        <div class="buttonContainer">
+            <ul>
+                <li onclick="show(0, 'red')" style="font-size: 15px;">Simple Bookmarking</li>
+                <li onclick="show(1, 'blue')" style="font-size: 15px;">Speedy Searching</li>
+                <li onclick="show(2, 'yellow')" style="font-size: 15px;">Easy Sharing</li>
+            </ul>
+        </div>
+        <div class="tabPanel">
+            <div class="container" style="padding-left: 0px;">
+                <div class="row">
+                  <div class="col-sm">
+                    <img src="images/tab1-edit-01.png" alt="" class="img-fluid">
+                  </div>
+                  <div class="col-sm">
+                    <h1>Bookmark in one click</h1>
+                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                    <button type="button" class="btn btn-secondary">More Info</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="tabPanel">
+          <div class="container" style="padding-left: 0px;">
+            <div class="row">
+              <div class="col-sm">
+                <img src="images/tab2-edit.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-sm">
+                <h1>Intelligent search</h1>
+                <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                <button type="button" class="btn btn-secondary">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabPanel">
+          <div class="container" style="padding-left: 0px;">
+            <div class="row">
+              <div class="col-sm">
+                <img src="images/tab3-edit.png" alt="" class="img-fluid">
+              </div>
+              <div class="col-sm">
+                <h1>Easy sharing</h1>
+                <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                <button type="button" class="btn btn-secondary">More Info</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+  </div>
+
+<!-- DOWNLOADS -->
+<div class="container-fluid downloads" id="download" style="margin-top: 15rem;">
+  <h1 style="font-family: 'Rubik', sans-serif;">Download the extensions</h1>
+  <p>
+    We've got more browsers in the pipeline. Please do let us know if you have got a favourite you'd like us to prioritize.
+  </p>
+      <div class="row">
+        <div class="col-lg-4 col-md-1" style="width: 33%;">
+               <div class="card">                
+                  <img src="/images/logo-chrome.svg" class="card-img-top" alt="..." style="height: 10rem; width: 8rem;margin: auto; padding-top: 3rem;">
+                  <div class="card-body">
+                    <h1 class="card-title" style="font-size: 1.6rem; margin-bottom: 0px;">Add to Chrome</h1>
+                    <p class="text-muted" style="text-align: center; width: 100%;">Minimum version 6.2.</p>
+                    <hr>
+                    <button type="button" class="btn btn-light btn-lg btn-block" style="background-color:hsl(249, 71%, 52%); color: white;">Add & install extension</button>
+                  </div>             
+                </div>
+        </div>
+        <div class="col-lg-4 col-md-1" style="width: 33%;">
+          <div class="card">                
+             <img src="/images/logo-firefox.svg" class="card-img-top" alt="..." style="height: 10rem; width: 8rem;margin: auto; padding-top: 3rem;">
+             <div class="card-body">
+               <h1 class="card-title" style="font-size: 1.6rem; margin-bottom: 0px;">Add to Firefox</h1>
+               <p class="text-muted" style="text-align: center; width: 100%;">Minimum version 5.5.</p>
+               <hr>
+               <button type="button" class="btn btn-light btn-lg btn-block" style="background-color:hsl(249, 71%, 52%); color: white;">Add & install extension</button>
+             </div>             
+           </div>
+        </div>
+        <div class="col-lg-4 col-md-1" style="width: 33%;">
+          <div class="card">                
+             <img src="/images/logo-opera.svg" class="card-img-top" alt="..." style="height: 10rem; width: 8rem;margin: auto; padding-top: 3rem;">
+             <div class="card-body">
+               <h1 class="card-title" style="font-size: 1.6rem; margin-bottom: 0px;">Add to Opera</h1>
+               <p class="text-muted" style="text-align: center; width: 100%;">Minimum version 4.6.</p>
+               <hr>
+               <button type="button" class="btn btn-light btn-lg btn-block" style="background-color:hsl(249, 71%, 52%); color: white;">Add & install extension</button>
+             </div>             
+           </div>
+        </div>
+      </div>
+</div>
+
+<!-- class="card-img-top" -->
+
+
+<!-- FREQUENTLY ASKED QUESTIONS -->
+    <div class="faq">
+      <h1 style="font-family: 'Rubik', sans-serif;">Frequently Asked Questions</h1>
+      <p>
+        Here are some of our FAQs. If you have any other questions you did like be answered then please feel free to email us.
+      </p>
+    </div>
+
+    <ul class="list-group list-group-flush" style="width: 50%; margin: auto; margin-top: 50px; margin-bottom: 50px;">
+      <li class="list-group-item">
+        <button class="accordion">What is Bookmark?<img src="images/icon-arrow.svg" alt="" style="position: absolute; right: 0px;"></button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <button class="accordion">How can I request a new browser?<img src="images/icon-arrow.svg" alt="" style="position: absolute; right: 0px;"></button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <button class="accordion">Is there a mobile app?<img src="images/icon-arrow.svg" alt="" style="position: absolute; right: 0px;"></button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <button class="accordion">What about other Chromium Browsers?<img src="images/icon-arrow.svg" alt="" style="position: absolute; right: 0px;"></button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </li>
+    </ul>
+
+    <footer class="footer-distributed" id="contact">
+			<div class="footer-center">
+        <h6 style="letter-spacing: 6.6px; margin-bottom: 2.5rem;">35,000+ ALREADY JOINED</h6>
+        <h1 style="width: 70%; margin: auto; margin-bottom: 2.5rem;">Stay up-to-date with what we are doing</h1>
+        <form>
+          <div class="form-row" style="display: block; margin:auto">
+            <div class="col-auto">
+              <input type="text" class="form-control mb-2" id="text" placeholder="Enter your Email-address">
+            </div>
+            <div class="col-auto">
+              <button onclick = "validate()" type="button" class="btn btn-light mb-2" style="background-color: rgb(228, 71, 24);">Contact Us</button>
+            </div>
+          </div>
+        </form>
+        <a href="https://www.facebook.com/DIGIphantom/"><i class="fa fa-facebook-official fa-2x" aria-hidden="true" style="color:rgb(250, 249, 249); margin-right: 1rem;"></i></a>
+        <a href="https://twitter.com/digiphantom_"><i class="fa fa-twitter fa-2x" aria-hidden="true" style="color:rgb(253, 253, 253);"></i></a>
+      </div>
+  	</footer>
+<script src="index.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!--BOOTSTRAP JS FILES-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

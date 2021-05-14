@@ -1,0 +1,227 @@
+body{
+    background-color: white;
+    font-family: 'Rubik', sans-serif;
+}
+h1{
+    font-family: 'Rubik', sans-serif !important;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+p{
+    font-size: 18px;
+    color: gray;
+}
+
+.nav-item {
+    padding-left: 36px;
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    color: black !important;
+    font-weight: 500;
+}
+
+.nav-link :hover{
+    color: red !important;
+}
+
+.intro{
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+
+.intro button:hover{
+    box-shadow: 0px 3px rgb(173, 173, 173) ;
+}
+
+.intro h1{
+    text-align: left;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-right: 10px;
+    padding-right: 50px;
+}
+.intro p {
+    text-align: left;
+    padding-top: 10px;
+    color: gray;
+    margin-right: 10px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.tabContainer {
+    height: 350px;
+    width: 100%;
+    margin-bottom: 5rem;
+
+} 
+
+.tabContainer .buttonContainer {
+    height: 15%;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.tabContainer .buttonContainer li{
+    height: 100%;
+    width: 33%;
+    margin: 0 30px;
+    /* border-bottom: 2px red; */
+    /* padding: 0 100px; */
+    cursor: pointer;
+    /* padding-left: 10%; */
+    display: inline;
+    
+}
+
+.tabContainer .buttonContainer .activated{
+    text-decoration: underline 3px red;
+}
+
+.tabPanel {
+    text-align: center;
+    display: none;
+    height: 85%;
+    margin-left: 0px;
+
+}
+.tabPanel img {
+    margin-left: 0px;
+}
+.tabPanel h1{
+    text-align: left;
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-left: 10px;
+    padding-left: 50px;
+}
+.tabPanel p {
+    text-align: left;
+    padding-top: 10px;
+    color: gray;
+    margin-left: 10px;
+    padding-left: 50px;
+    width: 100%;
+}
+
+.tabPanel button {
+    position: absolute;
+    left: 75px !important;
+    background-color: #4d006b
+}
+
+.downloads {
+    text-align: center;
+}
+
+.downloads p{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0px;
+
+}
+
+.downloads .row {
+    /* padding: 7% 0; */
+    padding: 50px 150px;
+}
+.downloads .row button:hover {
+    box-shadow: 0px 3px rgb(173, 173, 173) ;
+}
+.card-image-top img {
+    height: 10px !important;
+    width: 5px;
+}
+
+hr {
+    border-top: 0.4rem dotted rgb(204, 203, 203)
+}
+
+.faq {
+    margin-top: 3rem ;
+}
+.faq h1, .faq p{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 18px !important;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(247, 244, 244); 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    color: black !important;
+  }
+  footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	font: bold 16px 'Rubik';
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+
+/* Footer links */
+
+.footer-distributed {
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    background-color: hsl(249, 69%, 60%);
+    color: white;
+}
+
+.portal .content { 
+    margin: auto;
+    display: block;
+}
+
+
